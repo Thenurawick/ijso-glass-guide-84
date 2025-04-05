@@ -3,8 +3,15 @@ import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowUp, ArrowDown } from 'lucide-react';
 
-// Define testimonials data
-const testimonials = [
+interface Testimonial {
+  name: string;
+  role: string;
+  country: string;
+  image: string;
+  quote: string;
+}
+
+const testimonials: Testimonial[] = [
   {
     name: "Alex Johnson",
     role: "IJSO Gold Medalist",
