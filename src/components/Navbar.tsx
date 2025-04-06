@@ -63,40 +63,42 @@ const Navbar = () => {
                   National Junior Science Olympiad
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 glass">
-                    <li>
-                      <NavigationMenuLink 
-                        href="#papers"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground text-white hover:bg-ijso-deep-purple/50"
-                      >
-                        Papers
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink 
-                        href="#theory"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground text-white hover:bg-ijso-deep-purple/50"
-                      >
-                        Theory
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink 
-                        href="#experiments"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground text-white hover:bg-ijso-deep-purple/50"
-                      >
-                        Experiments
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink 
-                        href="#speeches"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground text-white hover:bg-ijso-deep-purple/50"
-                      >
-                        Speeches
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
+                  <div className="glass backdrop-blur-md border border-white/10 rounded-lg shadow-lg p-3">
+                    <ul className="grid w-[400px] gap-3">
+                      <li>
+                        <NavigationMenuLink 
+                          href="#papers"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-ijso-cool-cyan focus:bg-white/10 text-white"
+                        >
+                          Papers
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink 
+                          href="#theory"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-ijso-cool-cyan focus:bg-white/10 text-white"
+                        >
+                          Theory
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink 
+                          href="#experiments"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-ijso-cool-cyan focus:bg-white/10 text-white"
+                        >
+                          Experiments
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink 
+                          href="#speeches"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-ijso-cool-cyan focus:bg-white/10 text-white"
+                        >
+                          Speeches
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
