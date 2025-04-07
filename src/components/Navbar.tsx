@@ -103,6 +103,14 @@ const Navbar = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink 
+                  href="#theory" 
+                  className="text-white hover:text-ijso-cool-cyan transition-colors px-3 py-2"
+                >
+                  Theory
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink 
                   href="#contact" 
                   className="text-white hover:text-ijso-cool-cyan transition-colors px-3 py-2"
                 >
@@ -138,6 +146,7 @@ const Navbar = () => {
               <a href="#speeches" className="block text-white hover:text-ijso-cool-cyan transition-colors py-1" onClick={() => setMobileMenuOpen(false)}>Speeches</a>
             </div>
             
+            <a href="#theory" className="text-white hover:text-ijso-cool-cyan transition-colors" onClick={() => setMobileMenuOpen(false)}>Theory</a>
             <a href="#contact" className="text-white hover:text-ijso-cool-cyan transition-colors" onClick={() => setMobileMenuOpen(false)}>Contact Us</a>
             <Button className="btn-primary w-full">Join Now</Button>
           </div>
@@ -148,3 +157,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
