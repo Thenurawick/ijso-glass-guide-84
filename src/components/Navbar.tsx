@@ -29,6 +29,9 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // External URL for Theory page
+  const theoryUrl = "https://lovable.dev/projects/19c031ff-f7fb-4b8a-af7e-324c605cc263";
+
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'glass py-2' : 'py-4'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -103,8 +106,10 @@ const Navbar = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink 
-                  href="#theory" 
+                  href={theoryUrl} 
                   className="text-white hover:text-ijso-cool-cyan transition-colors px-3 py-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Theory
                 </NavigationMenuLink>
@@ -146,7 +151,13 @@ const Navbar = () => {
               <a href="#speeches" className="block text-white hover:text-ijso-cool-cyan transition-colors py-1" onClick={() => setMobileMenuOpen(false)}>Speeches</a>
             </div>
             
-            <a href="#theory" className="text-white hover:text-ijso-cool-cyan transition-colors" onClick={() => setMobileMenuOpen(false)}>Theory</a>
+            <a 
+              href={theoryUrl}
+              className="text-white hover:text-ijso-cool-cyan transition-colors" 
+              onClick={() => setMobileMenuOpen(false)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >Theory</a>
             <a href="#contact" className="text-white hover:text-ijso-cool-cyan transition-colors" onClick={() => setMobileMenuOpen(false)}>Contact Us</a>
             <Button className="btn-primary w-full">Join Now</Button>
           </div>
@@ -157,4 +168,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
